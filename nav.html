@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/nav.js"></script>
+</head>
+<body>
+<!-- 导航开始 -->
+<div class="nav_container">
+    <div class="nav_main">
+        <!-- logo -->
+        <div class="logo f_left">
+            <a href="javascript:;">
+                <img src="img/logo.png" alt="logo" title="logo">
+            </a>
+        </div>
+        <!-- nav中间 -->
+        <ul class="f_left nav-center">
+            <li class="product"><a href="javascript:;">产品</a></li>
+            <li class="solve"><a href="javascript:;">解决方案</a></li>
+            <li class="zoology"><a href="javascript:;">合作与生态</a></li>
+            <li class="api"><a href="javascript:;">文档</a></li>
+            <li class="support"><a href="javascript:;">支持</a></li>
+            <div class="float"></div>
+        </ul>
+
+        <!-- nav右侧 -->
+        <ul class="f_right nav-right">
+            <li><a href="javascript:;">价格</a></li>
+            <li>|</li>
+            <li><a href="javascript:;">控制台</a></li>
+            <li>|</li>
+            <li><a href="javascript:;">登录</a></li>
+            <li>|</li>
+            <li><a href="javascript:;">注册</a></li>
+        </ul>
+    </div>
+    <!-- nav 悬浮框 -->
+    <div class="nav-modal hide">
+        <div class="clearfix" style="width: 850px;margin: 0 auto">
+            <!-- 产品start -->
+            <div class="nav-product nav-modal-list f_left">
+                <div class="nav-product-list f_left">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">云计算</a></li>
+                        <li><a href="javascript:;">云存储</a></li>
+                        <li><a href="javascript:;">云网络</a></li>
+                        <li><a href="javascript:;">CDN</a></li>
+                        <li><a href="javascript:;">视频服务</a></li>
+                        <li><a href="javascript:;">IM</a></li>
+                    </ul>
+                </div>
+                <!--云计算-->
+                <div class="nav-product-cloud-computing f_left nav-product-cloud">
+                    <ul style="width: 220px">
+                        <li class="highlight"><a href="javascript:;">云主机</a>
+                            <p>弹性扩展、高可靠、高可用</p>
+                        </li>
+                        <li><a href="javascript:;">物理云主机</a>
+                            <p>灵活结合云产品、性能卓越、稳定安全</p>
+                        </li>
+                        <li><a href="javascript:;">弹性伸缩</a>
+                            <p>根据业务需求动态调整计算资源</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 云存储 -->
+                <div class="nav-product-cloud-storage f_left nav-product-cloud hide">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">云硬盘</a>
+                            <p>持久化存储空间,弹性扩容</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 云网络 -->
+                <div class="nav-product-cloud-web f_left nav-product-cloud hide">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">负载均衡</a>
+                            <p>实现云主机间应用程序流量自动分配</p>
+                        </li>
+                        <li><a href="javascript:;">专线接入</a>
+                            <p>实现用户本地业务到sspaas数据中心</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- CDN -->
+                <div class="nav-product-cloud-cdn f_left nav-product-cloud hide">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">CDN</a>
+                            <p>提高用户访问网站的响应速度</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 视频服务 -->
+                <div class="nav-product-cloud-video f_left nav-product-cloud hide">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">视频直播</a>
+                            <p>超低延迟、流畅高清、高并发</p>
+                        </li>
+                        <li><a href="javascript:;">视频点播</a>
+                            <p>集上传、存储、转码、点播加速一体化</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- IM -->
+                <div class="nav-product-cloud- f_left nav-product-cloud hide">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">IM</a>
+                            <p>一站式满足您的所有通信需求</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- 产品end -->
+
+            <!-- 解决方案 -->
+            <div class="nav-solve nav-modal-list f_left">
+                <div class="nav-solve-list f_left">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">电商解决方案</a></li>
+                        <li><a href="javascript:;">移动解决方案</a></li>
+                        <li><a href="javascript:;">直播解决方案</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--合作与生态-->
+            <div class="nav-zoology nav-modal-list f_left">
+                <div class="nav-zoology-list f_left">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">超算资源</a></li>
+                        <li><a href="javascript:;">合作伙伴</a></li>
+                        <li><a href="javascript:;">新闻中心</a></li>
+                    </ul>
+                </div>
+                <!--超算资源con-->
+                <div class="nav-zoology-resource nav-zoology-con f_left">
+                    <ul  style="height: 270px;width: 330px">
+                        <li class="highlight"><a href="javascript:;">大数据</a></li>
+                        <li><a href="javascript:;">商业软件</a></li>
+                        <li><a href="javascript:;">生物医药</a></li>
+                        <li><a href="javascript:;">动漫渲染</a></li>
+                        <li><a href="javascript:;">计算化学</a></li>
+                        <li><a href="javascript:;">GPU软件</a></li>
+                        <li><a href="javascript:;">应用软件</a></li>
+                        <li><a href="javascript:;">计算材料科学</a></li>
+                        <li><a href="javascript:;">气象</a></li>
+                    </ul>
+                </div>
+                <!--合作伙伴con-->
+                <div class="nav-zoology-partner nav-zoology-con f_left hide">
+                    <ul class="f_left">
+                        <li class="highlight"><a href="javascript:;">计算化学</a></li>
+                        <li><a href="javascript:;">应用软件</a></li>
+                        <li><a href="javascript:;">气象</a></li>
+                    </ul>
+                </div>
+                <!--新闻中心con-->
+                <div class="nav-zoology-new nav-zoology-con f_left hide">
+                    <ul class="f_left">
+                        <li class="highlight"><a href="javascript:;">应用软件</a></li>
+                        <li><a href="javascript:;">气象</a></li>
+                        <li><a href="javascript:;">GPU软件</a></li>
+                        <li><a href="javascript:;">计算材料科学</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--文档-->
+            <div class="nav-api nav-modal-list f_left">
+                <div class="nav-api-list f_left">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">产品文档</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--支持-->
+            <div class="nav-support nav-modal-list f_left">
+                <div class="nav-support-list f_left">
+                    <ul>
+                        <li class="highlight"><a href="javascript:;">关于银盾</a></li>
+                        <li><a href="javascript:;">工单</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div><!-- 导航结束 -->
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: "微软雅黑";
+}
+ul,li{
+    list-style: none;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+a{
+    text-decoration: none;color: #d7e9fe;
+}
+img{
+    border: none
+}
+p{
+    font-size: 12px;
+}
+.clearfix:after {clear:both;content:".";display:block;font-size:0;height:0;overflow:hidden;visibility:hidden;}
+.clearfix {*zoom:1;}
+/*
+*  导航容器
+*/
+.nav_container{
+    width: 100%;
+    height: 88px;
+    background: #021429;
+    position: fixed;
+    top:0;
+    left:0;
+    font-size: 16px;
+    z-index: 999;
+}
+.nav_main{
+    width: 1200px;
+    margin: 0 auto;
+    height: 88px;
+    font-size: 14px;
+    background: #021328;
+    font-weight: 500;
+    color: #516f8f;
+}
+.nav_main a{
+    color: #516f8f;
+}
+/*导航logo*/
+.logo img{
+    margin-top: 18px;
+}
+/*导航中间*/
+.nav-center{
+    margin-left: 150px;
+    position: relative;
+    width: 560px;
+    height: 86px;
+    border-bottom: 1px solid #63a4ed;
+}
+.nav-center li,.nav-right li{
+    float: left;
+    color: #516f8f;
+    line-height: 88px;
+}
+.nav-center li{
+    padding: 0 30px;
+}
+/*导航右侧*/
+.nav-right{
+    margin-right: 20px;
+}
+.nav-right li{
+    padding: 0 3px;
+}
+/*滑块*/
+.float {
+    background: #63a4ed;
+    position:absolute;bottom:-2px;left:0;
+}
+/*
+** 悬浮框
+*/
+.nav-modal{
+    position: absolute;
+    left: 0;
+    top:88px;
+    width: 100%;
+    min-height: 0;
+    z-index: 99;
+    background: rgba(0,0,0,0.9);
+}
+.nav-modal a{
+    color: #d7e9fe;
+}
+/*高亮*/
+.highlight{
+    background: #63a4ed!important;
+    color: #fff!important
+}
+.highlight a,.highlight p{
+    color: #fff!important;
+}
+/*鼠标移入效果*/
+.nav-modal-list ul li:hover{
+    background: #63a4ed;
+    color: #fff!important;
+    cursor: pointer;
+}
+.nav-modal-list ul li a:hover,.nav-right li a:hover{
+    color: #fff!important
+}
+/*下拉框*/
+.nav-modal-list{
+    width: 900px;
+    height: 335px;
+    display: none;
+    margin: 20px 0;
+    margin-left: 150px;
+}
+.nav-product .nav-product-list,.nav-solve .nav-solve-list,.nav-zoology .nav-zoology-list,
+.nav-api .nav-api-list,.nav-support .nav-support-list {
+    width: 150px;
+    height: 100%;
+    border-left:1px solid #2d445d;
+    border-right:1px solid #2d445d;
+}
+/*解决方案,文档,支持*/
+.nav-solve,.nav-api ,.nav-support{
+    width: 150px;
+}
+.nav-product-list ul li,.nav-solve-list ul li,.nav-zoology-list ul li,
+.nav-api-list ul li,.nav-support-list ul li {
+    width: 88%;
+    height: 40px;
+    margin: 15px auto 0;
+    line-height: 40px;
+    background: #222e3d;
+    color: #fff;
+    padding:0 15px;
+}
+
+.hide{
+    display: none;
+}
+/*悬浮下拉框*/
+.nav-product-cloud,.nav-solve-plan,.nav-zoology-con{
+    width: 720px;
+    height:366px;
+}
+.nav-product-cloud ul li,.nav-zoology-con ul li{
+    width: 220px;
+    background: #222e3d;
+    color: #fff;
+    margin-left:20px;
+    margin-top: 15px;
+    padding:8px 8px;
+}
+.nav-product-cloud p{
+    color: #87909a;
+}
+/*合作与生态*/
+.nav-zoology-con ul li{
+    width: 140px;
+    padding:10px;
+}
+.nav-product-cloud-computing ul li,.nav-zoology-resource ul li{
+    float: left;
+}
+
+/*
+** 媒体查询 适配
+*/
+@media only screen and (min-width: 1200px) {
+    .nav_container .nav_main {
+        width: 1200px;
+        font-size: 16px;
+    }
+    .nav-solve{
+        margin-left: 225px;
+    }
+    .nav-api{
+        margin-left: 480px;
+    }
+    .nav-support{
+        margin-left: 570px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .nav_container .nav_main {
+        width: 1523px;
+        font-size: 18px;
+    }
+    .nav-center{
+        width: 580px;
+        margin-left: 240px;
+    }
+    .nav-modal-list{
+        margin-left: 80px;
+    }
+    .nav-solve{
+        margin-left: 165px;
+    }
+    .nav-api{
+        margin-left: 430px;
+    }
+    .nav-support{
+        margin-left: 525px;
+    }
+}
